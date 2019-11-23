@@ -1,0 +1,326 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Монтаж ПП</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#service">Услуги <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#manufacture">Производство</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Цены</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Партнеры</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- jumbotron -->
+<div class="jumbotron">
+  <h1 class="display-4">О Компании!</h1>
+  <p class="lead">Это простой пример блока с компонентом в стиле jumbotron для привлечения дополнительного внимания к содержанию или информации.</p>
+  <hr class="my-4">
+  <p>Использются служебные классы для типографики и расстояния содержимого в контейнере большего размера.</p>
+
+</div>
+
+
+<!--Ручной МОНТАЖ-->
+<section id='service'>
+ <div class="alert alert-success bg-white"  role="alert">
+  <h2 class="alert-heading">УСЛУГИ</h2>
+  <h5 class="alert-heading"></h5>
+</div>
+</section>
+
+<div class="container-fluid">
+    
+<div class="row">
+      <div class="col-sm-1"></div>
+  <div class="col-sm-2">
+    <div class="card">
+        <div class="card-header">
+            Монтаж BGA
+        </div>
+      <div class="card-body">
+        <h5 class="card-title">Специальный заголовок</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2">
+    <div class="card">
+        <div class="card-header">
+            Монтаж QFN
+        </div>
+      <div class="card-body">
+        <h5 class="card-title">Специальный заголовок</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-2">
+    <div class="card">
+        <div class="card-header">
+            Монтаж DIP
+        </div>
+      <div class="card-body">
+        <h5 class="card-title">Специальный заголовок</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+      </div>
+    </div>
+  </div>
+      <div class="col-sm-2">
+    <div class="card">
+        <div class="card-header">
+            Реболлинг BGA
+        </div>
+      <div class="card-body">
+        <h5 class="card-title">Специальный заголовок</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+      </div>
+    </div>
+  </div>
+        <div class="col-sm-2">
+    <div class="card">
+        <div class="card-header">
+            Сборка кабелей
+        </div>
+      <div class="card-body">
+        <h5 class="card-title">Специальный заголовок</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-1"></div>
+</div>
+</div>
+
+<!--Карточки-->
+<section id="manufacture">
+    
+<div class="alert alert-success bg-white" role="alert">
+  <h2 class="alert-heading">ПРОИЗВОДСТВО</h2>
+</div>
+</section>
+
+<div class="container-fluid">
+    <div class="row">
+            <div class="col-lg-1"></div>
+                <div class="col-lg-10">
+                    <div class="card-deck bg-white">
+                      <div class="card" >
+                        <div class="card-body">
+                          <h5 class="card-title">Сборка прототипов.</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+     
+                          {# {% include 'home/collaps.html' %} #}
+
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Мелкосерийное производство</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                
+                    </div>
+                  </div>
+                </div>
+            </div>  
+
+        <div class="col-lg-1"></div>    
+    </div>
+</div>
+
+
+
+<div class="alert alert-success bg-white" role="alert">
+  <h2 class="alert-heading">ЦЕНЫ</h2>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-1">
+        </div>
+            <div class="col-lg-10">
+                <table class="table">
+                    <thead>
+                        <tr>
+                          <th scope="col">Тип</th>
+                          <th scope="col">Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>SMD</td>
+                          <td>2.5 р</td>
+                        </tr>
+                        <tr>
+                          <td>DIP</td>
+                          <td>2.5 р</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+</div>
+
+
+<div class="alert alert-success bg-white" role="alert">
+  <h2 class="alert-heading">ПАРТНЕРЫ</h2>
+</div>
+<div class="row">
+      <div class="col-sm-1"></div>
+  <div class="col-sm-2">
+    <div class="card">
+        <div class="card-header">
+            ООО "ЭКСПЕРТ ГРУПП"
+        </div>
+      <div class="card-body">
+        <h5 class="card-title">Специальный заголовок</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-2">
+    <div class="card">
+        <div class="card-header">
+            ООО ""ВИКО ИНЖИНИРИНГ""
+        </div>
+      <div class="card-body">
+        <h5 class="card-title">Специальный заголовок</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-2">
+    <div class="card">
+        <div class="card-header">
+            ООО "РОТЕМ"
+        </div>
+      <div class="card-body">
+        <h5 class="card-title">Специальный заголовок</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+      <div class="col-sm-2">
+    <div class="card">
+        <div class="card-header">
+            ООО "НПП СТРЕЛА"
+        </div>
+      <div class="card-body">
+        <h5 class="card-title">Специальный заголовок</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="alert alert-success bg-white" role="alert">
+  <h2 class="alert-heading">СДЕЛАТЬ ЗАКАЗ</h2>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2">
+        </div>
+            <div class="col-lg-8">
+
+<form method="POST" action="" enctype="multipart/form-data" action='upload' >
+		{% csrf_token %}
+{{ form.as_p }}
+
+<input type="submit" value='Отправить' name="">
+</form>
+            </div>
+        <div class="col-lg-2">
+        </div>
+    </div>
+</div>
+
+
+
+
+<footer class="page-footer font-small blue pt-4">
+  <div class="container-fluid text-center text-md-left">
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+       <h5 class="text-uppercase">Footer Content</h5>
+        <p>Here you can use rows and columns to organize your footer content.</p>
+
+      </div>
+      <hr class="clearfix w-100 d-md-none pb-3">
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase">Links</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase">Links</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  </div>
+</footer>
+
+
+
+
+{% endblock content %}
+
+
+
